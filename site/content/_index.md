@@ -1,6 +1,6 @@
 ---
-title: Great coffee with a conscience
-subtitle: Support sustainable farming while enjoying a cup
+title: Let's build FAST and EFFICIENT web platform
+subtitle: Get the essetial latest hacks you need to build websites
 image: /img/home-jumbotron.jpg
 blurb:
   heading: Why Kaldi?
@@ -17,7 +17,7 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone.
 products: []
-values:
+about:
   heading: Our values
   text: >-
     Coffee is an amazing part of human culture but it has a dark side too – one
