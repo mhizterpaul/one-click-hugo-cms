@@ -30,7 +30,7 @@ export default class ValuesPreview extends React.Component {
     }
     
     const entryValues = entry.getIn(["data", "about"]);
-    const values = entryValues ? entryValues.toJS() : [];
+    const about = entryValues ? entryValues.toJS() : [];
     
     return <div>
       <Jumbotron image={image} title={entry.getIn(["data", "title"])} />
