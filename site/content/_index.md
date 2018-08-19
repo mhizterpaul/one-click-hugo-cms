@@ -1,6 +1,6 @@
 ---
-title: Let's build FAST and EFFICIENT web platform
-subtitle: Get the essetial latest hacks you need to build websites
+title: MordernWeb - Fast and Efficient
+subtitle: Get the latest hacks needed to build quality websites
 image: /img/home-jumbotron.jpg
 blurb:
   heading: Why Kaldi?
