@@ -1,5 +1,5 @@
 ---
-title: MordernWeb - Fast and Efficient
+title: MordernWeb - Let's build FAST and EFFICIENT web platform
 subtitle: Get the latest hacks needed to build quality websites
 image: /img/home-jumbotron.jpg
 blurb:
