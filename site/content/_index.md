@@ -1,14 +1,14 @@
 ---
 title: Build FAST and EFFICIENT web platform
 subtitle: The latest hacks needed to build quality websites
-image: /img/home-jumbotron.jpg
+image: /img/MordernWeb.jpg
 blurb:
-  heading: Why Kaldi?
+  heading: Web of Today
   text: >-
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    The web is changing. At a very fast rate. New things come every year, month
+    or maybe day. This calls for the need to keep up with these changes. And you
+    know, keeping up with the changes means learning lots of tools - new tools.
+    So, how are we going to do that?
 intro:
   heading: What we offer
   text: >-
@@ -17,12 +17,15 @@ intro:
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone.
 products: []
-about:
-  heading: Our values
+values:
+  heading: How to Keep up
   text: >-
-    Coffee is an amazing part of human culture but it has a dark side too – one
-    of colonialism and mindless abuse of natural resources and human lives. We
-    want to turn this around and return the coffee trade to the drink’s
-    exhilarating, empowering and unifying nature.
+    We can keep up with the changes through lots of means. Which include:
+    Googling, YouTube videos, podcasts, blog posts, news letters and many
+    others. Sometimes, the noise out there might even prevent you from knowing
+    the real stuff. There're too much noise,seriously. This again calls for the
+    need to filter the information we get trough those means mentioned above.
+    And how do we do this? The truth is that I don't know. I would tell you to
+    follow your heart.
 ---
 
