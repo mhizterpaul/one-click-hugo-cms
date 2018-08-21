@@ -5,7 +5,7 @@ description: >-
   This is just a simple function That I write to learn the basics of this web
   page
 ---
-```javascript
+```Javascript
 var s = "This is working";
 function(){
   document.write("This is working now");
