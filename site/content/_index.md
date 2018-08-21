@@ -1,7 +1,7 @@
 ---
 title: FAST and EFFICIENT
 subtitle: The latest hacks needed to build quality websites
-image: /img/this it today's web.jpg
+image: /img/this-is-todays-web.jpeg
 blurb:
   heading: Web of Today
   text: >-
@@ -21,5 +21,6 @@ about:
     need to filter the information we get trough those means mentioned above.
     And how do we do this? The truth is that I don't know. I would tell you to
     follow your heart.
+    imageUrl: "/img/MordernWeb.jpg"
 ---
 
