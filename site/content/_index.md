@@ -11,7 +11,7 @@ blurb:
     or maybe day. This calls for the need to keep up with these changes. And you
     know, keeping up with the changes means learning lots of tools - new tools.
     So, how are we going to do that?
-about:
+values:
   heading: How to Keep up
 =======
     We can keep up with the changes through lots of means. Which include:
