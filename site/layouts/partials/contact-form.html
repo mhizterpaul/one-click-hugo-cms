@@ -1,20 +1,28 @@
 <!-- Contact -->
 <div class="mb4">
-  <h4 class="f3 b lh-title mb3 tc">We can always have a nice chat here </h4>
+  <h4 class="f3 b lh-title mb3 tc">Get in touch trough email</h4>
+  <div class="alert" style="
+    text-align: center; 
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+">Your message has been sent. Thank you</div>
 
-  <form name="contact" method="POST" netlify>
+  <form name="contact" method="POST" id="contactForm">
     <div class="flex-l mhn1-l">
           <!-- Name -->
       <div class="ph1-l w-50-l">
         <fieldset>
-          <input type="text" id="name" placeholder="Name" class="w-100 mb2">
+          <input type="text" id="name" placeholder="Name" class="w-100 mb2" required="true">
           <label for="name">Name</label>
         </fieldset>
       </div>
           <!-- Email -->
       <div class="ph1-l w-50-l">
         <fieldset>
-          <input type="email" id="email" placeholder="Email" class="w-100 mb2">
+          <input type="email" id="email" placeholder="Email" class="w-100 mb2" required="true">
           <label for="email">Email</label>
         </fieldset>
       </div>
