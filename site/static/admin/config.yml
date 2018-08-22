@@ -52,7 +52,7 @@ collections: # A list of collections the CMS should be able to edit
                 name: text
                 widget: text
 
-        - file: "site/content/about/_index.md"
+      - file: "site/content/about/_index.md"
         label: "About Page"
         name: "about"
         fields:
