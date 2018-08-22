@@ -1,7 +1,7 @@
 // JS Goes here - ES6 supported
 
 // Initialize Firebase
-let config = {
+var config = {
   apiKey: "AIzaSyD9h3vQlFMD27lwFZaryDeYyOkotOmhUIk",
   authDomain: "contactform-a488c.firebaseapp.com",
   databaseURL: "https://contactform-a488c.firebaseio.com",
@@ -12,21 +12,21 @@ let config = {
 firebase.initializeApp(config);
 
 //Refrence messages collection
-let messagesRef = firebase.database().ref("messages");
+var messagesRef = firebase.database().ref("messages");
 
 //Listen for form submit
 document.getElementByid("contactForm").addEventListener(
-	"submit", submitForm
-);
+	"submit", submitForm);
 
 //Submit form
 function submitForm(e){
 	e.preventDefault();
 
 	//Get input value
-	let name = getInputVal(name);
-	let email = getInputVal(email);
-	let message = getInputVal(message);
+	var name = getInputVal(name);
+	var email = getInputVal(email);
+	var message = getInputVal(message);
+	console.log(name);
 
 	saveMessage(name, email, message);
 
@@ -50,7 +50,7 @@ function getInputVal(id) {
 
 //Save the message firebase
 function saveMessage(name, email, message){
-	let newMessageRef = messagesRef.push();
+	var newMessageRef = messagesRef.push();
 	newMessageRef.set({
 		name: name,
 		email: email,
