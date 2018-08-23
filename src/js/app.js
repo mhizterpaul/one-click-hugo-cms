@@ -11,49 +11,6 @@ var config = {
 };
 firebase.initializeApp(config);
 
-//Refrence messages collection
-var messagesRef = firebase.database().ref("messages");
-
-//Listen for form submit
-document.getElementById("contactForm").addEventListener("submit", function(e){
-	e.preventDefault();
-	//Get input value
-	var name = getInputVal("name");
-	var email = getInputVal("email");
-	var message = getInputVal("message");
-
-	saveMessage(name, email, message);
-
-	//Show alert
-	document.querySelector(".alert").style.display = "block";
-
-	//Hide alert after 3 sec
-	setTimeout(function(){
-		document.querySelector(".alert").style.display = "none";
-	}, 3000);
-
-	//Clear form inputs
-	document.getElementById("contactForm").reset();
-});
-
-
-
-//Function to get input value
-function getInputVal(id) {
-	return document.getElementById(id).value;
-}
-//Save the message firebase
-function saveMessage(name, email, message){
-	var newMessageRef = messagesRef.push();
-	newMessageRef.set({
-		name: name,
-		email: email,
-		message: message
-	});
-
-}
-
-
 //For newsletter
 var newsletterRef = firebase.database().ref("newsletter");
 document.getElementById("newsletter").addEventListener("submit", function(e){

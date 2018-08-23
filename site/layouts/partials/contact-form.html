@@ -10,7 +10,7 @@
     display: none;
 ">Your message has been sent. Thank you</div>
 
-  <form class = "contactForm">
+  <form id="contactForm">
     <div class="flex-l mhn1-l">
           <!-- Name -->
       <div class="ph1-l w-50-l">
@@ -36,6 +36,61 @@
         <!-- Button -->
     <div class="tc">
       <button type="submit" class="btn w-100 w-auto-ns raise">Submit</button>
+      <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+      <script>
+
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyCLSy9UIYLOk0zduUjAkbTA0OVjcEatwZ8",
+          authDomain: "blogcontact-f2519.firebaseapp.com",
+          databaseURL: "https://blogcontact-f2519.firebaseio.com",
+          projectId: "blogcontact-f2519",
+          storageBucket: "blogcontact-f2519.appspot.com",
+          messagingSenderId: "691135997315"
+        };
+        firebase.initializeApp(config);
+
+        //Refrence messages collection
+        var messagesRef = firebase.database().ref("messages");
+
+        //Listen for form submit
+        document.getElementById("contactForm").addEventListener("submit", function(e){
+          e.preventDefault();
+          //Get input value
+          var name = getInputVal("name");
+          var email = getInputVal("email");
+          var message = getInputVal("message");
+
+          saveMessage(name, email, message);
+
+          //Show alert
+          document.querySelector(".alert").style.display = "block";
+
+          //Hide alert after 3 sec
+          setTimeout(function(){
+            document.querySelector(".alert").style.display = "none";
+          }, 3000);
+
+          //Clear form inputs
+          document.getElementById("contactForm").reset();
+        });
+
+
+
+        //Function to get input value
+        function getInputVal(id) {
+          return document.getElementById(id).value;
+        }
+        //Save the message firebase
+        function saveMessage(name, email, message){
+          var newMessageRef = messagesRef.push();
+          newMessageRef.set({
+            name: name,
+            email: email,
+            message: message
+          });
+        }
+      </script>
     </div>
   </form>
 </div>
