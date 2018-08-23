@@ -94,28 +94,3 @@ if (window.netlifyIdentity) {
   });
 }
 
-/*
-var theForm = document.querySelector(".contactForm");
-theForm.addEventListener("submit", function(event){
-	event.preventDefault();
-
-	//Get input value
-	var name = getInputVal("name");
-	var email = getInputVal("email");
-	var message = getInputVal("message");
-
-	saveMessage(name, email, message);
-
-	//Show alert
-	document.querySelector(".alert").style.display = "block";
-
-	//Hide alert after 3 sec
-	setTimeout(function(){
-		document.querySelector(".alert").style.display = "none";
-	}, 3000);
-
-	//Clear form inputs
-	document.getElementById("contactForm").reset();
-
-});
-*/
