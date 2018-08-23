@@ -2,31 +2,52 @@
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyD9h3vQlFMD27lwFZaryDeYyOkotOmhUIk",
-  authDomain: "contactform-a488c.firebaseapp.com",
-  databaseURL: "https://contactform-a488c.firebaseio.com",
-  projectId: "contactform-a488c",
-  storageBucket: "contactform-a488c.appspot.com",
-  messagingSenderId: "473349870319"
+  apiKey: "AIzaSyCLSy9UIYLOk0zduUjAkbTA0OVjcEatwZ8",
+  authDomain: "blogcontact-f2519.firebaseapp.com",
+  databaseURL: "https://blogcontact-f2519.firebaseio.com",
+  projectId: "blogcontact-f2519",
+  storageBucket: "blogcontact-f2519.appspot.com",
+  messagingSenderId: "691135997315"
 };
 firebase.initializeApp(config);
 
 //Refrence messages collection
 var messagesRef = firebase.database().ref("messages");
 
+//Refrence to newsletter collection
+var newsletterRef = firebase.database().ref("newsletter");
+
 //Listen for form submit
-document.getElementByid("contactForm").addEventListener(
-	"submit", submitForm);
+var theForm = document.getElementById("contactForm");
+theForm.addEventListener("submit", 
+	submitForm);
+
+document.getElementById("newsletter").addEventListener("submit", function(e){
+	e.preventDefault();
+	//Get input value
+	var newsletterEmail = document.getElementById("newsletterEmail").value;
+	saveEmail(newsletterEmail);
+
+	//Show alert
+	document.querySelector(".newsletterAlert").style.display = "block";
+
+	//Hide alert after 3 sec
+	setTimeout(function(){
+		document.querySelector(".newsletterAlert").style.display = "none";
+	}, 3000);
+
+	//Clear form inputs
+	document.getElementById("newsletter").reset();
+});
 
 //Submit form
 function submitForm(e){
 	e.preventDefault();
 
 	//Get input value
-	var name = getInputVal(name);
-	var email = getInputVal(email);
-	var message = getInputVal(message);
-	console.log(name);
+	var name = getInputVal("name");
+	var email = getInputVal("email");
+	var message = getInputVal("message");
 
 	saveMessage(name, email, message);
 
@@ -39,13 +60,13 @@ function submitForm(e){
 	}, 3000);
 
 	//Clear form inputs
-	document.getElementByid("contactForm").reset();
+	document.getElementById("contactForm").reset();
 
 }
 
 //Function to get input value
 function getInputVal(id) {
-	return document.getElementByid(id).value;
+	return document.getElementById(id).value;
 }
 
 //Save the message firebase
@@ -57,6 +78,13 @@ function saveMessage(name, email, message){
 		message: message
 	});
 
+}
+
+function saveEmail(newsletterEmail){
+	var newnewletterRef = newsletterRef.push();
+	newnewletterRef.set({
+	 newsletterEmail: newsletterEmail
+	});
 }
 
 

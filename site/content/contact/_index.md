@@ -1,18 +1,19 @@
 ---
 title: "Contact"
 contact_entries:
-  - heading: Location
-    text: "3153 Lynn Avenue, South San Francisco, California 94080"
-  - heading: Working hours
-    text: "Monday – Saturday: 9AM – 7PM We’re closed on Sundays"
+  - heading: Email Address
+    text: "You can get to me through this email: codnificent@gmail.com"
+  - heading: Phone Number
+    text: "Or perhaps through this phone number: (+234) 07033287048"
 ---
 
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
+I'd love to get in tough with you and hear your ideas or maybey questions.
+I srive to share information that is helpful to all of us and your feedback
+is highly valued.
 
-<h3 class="f4 b lh-title mb2">How can I get…?</h3>
+<h3 class="f4 b lh-title mb2">How to reach me…?</h3>
 
-You can also use the form below for any inquiries about coffee
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our baristas. Don’t be shy, drop us a line!
+You can use the form below for any inquiries about anything related
+to the purpose of this site. A helpful idea is cool too.
+The form is easy to use and I'd try my best to get to you within the shortest
+time possible. Don’t waste time, drop me a line!
