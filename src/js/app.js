@@ -14,14 +14,48 @@ firebase.initializeApp(config);
 //Refrence messages collection
 var messagesRef = firebase.database().ref("messages");
 
-//Refrence to newsletter collection
-var newsletterRef = firebase.database().ref("newsletter");
-
 //Listen for form submit
-var theForm = document.getElementById("contactForm");
-theForm.addEventListener("submit", 
-	submitForm);
+document.getElementById("contactForm").addEventListener("submit", function(e){
+	e.preventDefault();
+	//Get input value
+	var name = getInputVal("name");
+	var email = getInputVal("email");
+	var message = getInputVal("message");
 
+	saveMessage(name, email, message);
+
+	//Show alert
+	document.querySelector(".alert").style.display = "block";
+
+	//Hide alert after 3 sec
+	setTimeout(function(){
+		document.querySelector(".alert").style.display = "none";
+	}, 3000);
+
+	//Clear form inputs
+	document.getElementById("contactForm").reset();
+});
+
+
+
+//Function to get input value
+function getInputVal(id) {
+	return document.getElementById(id).value;
+}
+//Save the message firebase
+function saveMessage(name, email, message){
+	var newMessageRef = messagesRef.push();
+	newMessageRef.set({
+		name: name,
+		email: email,
+		message: message
+	});
+
+}
+
+
+//For newsletter
+var newsletterRef = firebase.database().ref("newsletter");
 document.getElementById("newsletter").addEventListener("submit", function(e){
 	e.preventDefault();
 	//Get input value
@@ -40,9 +74,30 @@ document.getElementById("newsletter").addEventListener("submit", function(e){
 	document.getElementById("newsletter").reset();
 });
 
-//Submit form
-function submitForm(e){
-	e.preventDefault();
+function saveEmail(newsletterEmail){
+	var newnewletterRef = newsletterRef.push();
+	newnewletterRef.set({
+	 newsletterEmail: newsletterEmail
+	});
+}
+
+
+//Connetion to Netlify CMS- The admin path
+
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
+
+/*
+var theForm = document.querySelector(".contactForm");
+theForm.addEventListener("submit", function(event){
+	event.preventDefault();
 
 	//Get input value
 	var name = getInputVal("name");
@@ -62,40 +117,5 @@ function submitForm(e){
 	//Clear form inputs
 	document.getElementById("contactForm").reset();
 
-}
-
-//Function to get input value
-function getInputVal(id) {
-	return document.getElementById(id).value;
-}
-
-//Save the message firebase
-function saveMessage(name, email, message){
-	var newMessageRef = messagesRef.push();
-	newMessageRef.set({
-		name: name,
-		email: email,
-		message: message
-	});
-
-}
-
-function saveEmail(newsletterEmail){
-	var newnewletterRef = newsletterRef.push();
-	newnewletterRef.set({
-	 newsletterEmail: newsletterEmail
-	});
-}
-
-
-//Connetion to Netlify CMS
-
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("init", user => {
-    if (!user) {
-      window.netlifyIdentity.on("login", () => {
-        document.location.href = "/admin/";
-      });
-    }
-  });
-}
+});
+*/
