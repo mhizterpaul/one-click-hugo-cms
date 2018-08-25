@@ -1,14 +1,7 @@
 <!-- Contact -->
 <div class="mb4">
   <h4 class="f3 b lh-title mb3 tc">Get in touch trough email</h4>
-  <div class="alert" style="
-    text-align: center; 
-    padding: 10px;
-    background: #79c879;
-    color: #fff;
-    margin-bottom: 10px;
-    display: none;
-">Your message has been sent. Thank you</div>
+ 
 
   <form id="contactForm">
     <div class="flex-l mhn1-l">
@@ -36,8 +29,17 @@
         <!-- Button -->
     <div class="tc">
       <button type="submit" class="btn w-100 w-auto-ns raise">Submit</button>
-      <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
-      <script>
+    </div>
+     <div class="alert" style="
+    text-align: center; 
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+">Your message has been sent. Thank you</div>
+    <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <script>
 
         // Initialize Firebase
         var config = {
@@ -91,6 +93,5 @@
           });
         }
       </script>
-    </div>
   </form>
 </div>
