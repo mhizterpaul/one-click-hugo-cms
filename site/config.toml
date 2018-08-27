@@ -1,3 +1,10 @@
-baseurl = "/"
+baseurl = "https://mordernweb.com"
 languageCode = "en-us"
 title = "Homepage"
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.80
+
+[xml]
+  standalone = true
