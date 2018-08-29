@@ -1,15 +1,13 @@
 <!--NEWSLETTER FORM-->
-<form class="flex-ns mb3" id="newsletter" netlify-honeypot="bot" netlify>
+<form name="newsLetter" method="POST" netlify-honeypot="bot" netlify class="flex-ns mb3">
   <p class="hidden">
     <label>Don’t fill this out if you're human: <input name="bot" /></label>
   </p>
-
-  <fieldset class="flex-auto mb2 mb0-ns mr2-ns" name="newsletter">
-    <input type="text" id="newsletterEmail" placeholder="Your emailhere" class="w-100" required="ture">
+ <fieldset class="flex-auto mb2 mb0-ns mr2-ns">
+    <input type="text" id="newsletterEmail" placeholder="Your email here" class="w-100" required="ture">
     <label for="newsletterEmail">Your email</label>
   </fieldset>
 
   <button class="btn mb3 w-100 w-auto-ns mb0-ns raise" type="submit">Submit</button>
-
 </form>
 
