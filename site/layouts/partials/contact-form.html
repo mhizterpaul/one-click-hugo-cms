@@ -3,23 +3,23 @@
   <h4 class="f3 b lh-title mb3 tc">Get in touch trough email</h4>
  
 
-  <form id="contactForm">
-    <div class="flex-l mhn1-l">
+  <form id="contactForm" netlify>
+    <!--<div class="flex-l mhn1-l">-->
           <!-- Name -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
+      <!--<div class="ph1-l w-50-l">-->
+        <fieldset class="ph1-l w-50-l flex-l mhn1-l">
           <input type="text" id="name" name="name" placeholder="Name" class="w-100 mb2" required="true">
           <label for="name">Name</label>
         </fieldset>
-      </div>
+      <!--</div>-->
           <!-- Email -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
+      <!--<div class="ph1-l w-50-l">-->
+        <fieldset class="ph1-l w-50-l flex-l mhn1-l">
           <input type="email" name="email" id="email" placeholder="Email" class="w-100 mb2" required="true">
           <label for="email">Email</label>
         </fieldset>
-      </div>
-    </div>
+      <!--</div>-->
+    <!--</div>-->
 
         <!-- Message -->
     <fieldset>
@@ -38,6 +38,9 @@
     margin-bottom: 10px;
     display: none;
 ">Your message has been sent. Thank you</div>
+
+
+<!--
     <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
     <script>
 
@@ -93,5 +96,7 @@
           });
         }
       </script>
+
+    -->
   </form>
 </div>

@@ -1,7 +1,7 @@
 ---
 title: FAST and EFFICIENT
 subtitle: The latest hacks needed to build quality websites
-image: /img/this-is-todays-web.jpeg
+image: /img/about.jpg
 blurb:
   heading: You're welcome
   text: >-
