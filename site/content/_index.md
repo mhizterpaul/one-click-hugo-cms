@@ -1,5 +1,5 @@
 ---
-title: FAST and EFFICIENT
+title: Fast and efficient
 subtitle: The latest hacks needed to build quality websites
 image: /img/about.jpg
 blurb:
