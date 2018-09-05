@@ -36,7 +36,7 @@ Other web-based apps like Twitter, Whatsapp, Facebook also use the internet and 
 <br>
 Understanding how the web works is not usually always easy. This is because it requires the basic understanding of some somewhat complicated mechanisms. 
 <br>
-Mechanisms like **[routing]https://guide.meteor.com/routing.html)**, client-server connections, request-response circle (round trip), DNS, HTTP, URL, packets, bandwidth, TPC, IP etc.
+Mechanisms like **[routing](https://guide.meteor.com/routing.html)**, client-server connections, request-response circle (round trip), DNS, HTTP, URL, packets, bandwidth, TPC, IP etc.
 <br>
 All of these? Wow! This is huge. Seriously. But, no need to worry. We don't actually need to go too deep into those - just a basic knowledge.
 <br>
